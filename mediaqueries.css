@@ -1,0 +1,155 @@
+/*Tablets*/
+@media (max-width: 992px) {
+    .navbar{
+        gap: 10px;      
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 85px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--nav-bg);
+        border: 2px solid var(--electric);
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .header .logo img {
+        height: 90px;
+        width: auto;
+        border-radius: 5em;
+        transform: all 0.3s;
+    }
+
+    .nav-links a{
+        font-size: 18px;        
+    }
+
+    .menu-label{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .menu-label img{
+        height: 50px;
+        width: 40px;
+    }
+
+    #menu-toggle:checked + .nav-links{
+        display: flex;
+    }
+
+    #zona{
+        max-width: 900px;
+    }
+
+    .zona-info{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; 
+        margin: 50px 0px;    
+    }
+
+    .zona-info h1{
+        width: 90%;
+        max-width: 350px;
+        min-width: unset;
+    }
+
+    .zona-btn-links{
+        
+        gap: 30px;
+    }
+
+    .zona-card{
+        display: none;
+    }
+
+    .zona-card img{
+        width: 410px;
+    }
+
+    #info{
+        max-width: 900px;
+    }
+
+    #card h2{
+        text-align: center;
+        width: 80%;
+    }
+
+    .cards-conteiner{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;     
+    
+    }
+
+    .contacto h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oficinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    @media (max-width: 576px) {
+        .zona-info p{
+            width: 80%;
+            max-width: unset;
+        }
+
+        #info{
+            max-width: 500px;
+        }
+        .info-titulo{
+            width: 90%;            
+        }
+        #discover{
+            width: 70%;
+        }
+
+        discover h2{
+            font-size: 48px;
+            width: 100%;
+        }
+
+        .discover-text{
+            width: 100%;
+            padding: 10px;
+            line-height: 30px;
+            gap: 50px;
+        }
+        .footer-end{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-links ul{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
